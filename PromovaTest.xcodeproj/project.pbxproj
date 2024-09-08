@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FBFE800F2C8E230A00877C30 /* PromovaTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE800E2C8E230A00877C30 /* PromovaTestApp.swift */; };
-		FBFE80112C8E230A00877C30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE80102C8E230A00877C30 /* ContentView.swift */; };
 		FBFE80132C8E230B00877C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFE80122C8E230B00877C30 /* Assets.xcassets */; };
 		FBFE80162C8E230B00877C30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFE80152C8E230B00877C30 /* Preview Assets.xcassets */; };
 		FBFE80272C8E2A9000877C30 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FBFE80262C8E2A9000877C30 /* ComposableArchitecture */; };
+		FBFE802C2C8E302C00877C30 /* AnimalCategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE802B2C8E302C00877C30 /* AnimalCategoryListView.swift */; };
+		FBFE802F2C8E304400877C30 /* AnimalCategoryListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE802E2C8E304400877C30 /* AnimalCategoryListReducer.swift */; };
+		FBFE80352C8E507E00877C30 /* AnimalApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE80342C8E507E00877C30 /* AnimalApi.swift */; };
+		FBFE80382C8E50C900877C30 /* AnimalCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE80372C8E50C900877C30 /* AnimalCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBFE800B2C8E230A00877C30 /* PromovaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromovaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFE800E2C8E230A00877C30 /* PromovaTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromovaTestApp.swift; sourceTree = "<group>"; };
-		FBFE80102C8E230A00877C30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBFE80122C8E230B00877C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBFE80152C8E230B00877C30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBFE802B2C8E302C00877C30 /* AnimalCategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryListView.swift; sourceTree = "<group>"; };
+		FBFE802E2C8E304400877C30 /* AnimalCategoryListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryListReducer.swift; sourceTree = "<group>"; };
+		FBFE80342C8E507E00877C30 /* AnimalApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalApi.swift; sourceTree = "<group>"; };
+		FBFE80372C8E50C900877C30 /* AnimalCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +59,8 @@
 		FBFE800D2C8E230A00877C30 /* PromovaTest */ = {
 			isa = PBXGroup;
 			children = (
+				FBFE80292C8E300300877C30 /* Source */,
 				FBFE800E2C8E230A00877C30 /* PromovaTestApp.swift */,
-				FBFE80102C8E230A00877C30 /* ContentView.swift */,
 				FBFE80122C8E230B00877C30 /* Assets.xcassets */,
 				FBFE80142C8E230B00877C30 /* Preview Content */,
 			);
@@ -67,6 +73,49 @@
 				FBFE80152C8E230B00877C30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBFE80282C8E2FBA00877C30 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE802A2C8E301400877C30 /* AnimalCategoryList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FBFE80292C8E300300877C30 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE80362C8E50BE00877C30 /* Model */,
+				FBFE80332C8E505100877C30 /* Network */,
+				FBFE80282C8E2FBA00877C30 /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FBFE802A2C8E301400877C30 /* AnimalCategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE802B2C8E302C00877C30 /* AnimalCategoryListView.swift */,
+				FBFE802E2C8E304400877C30 /* AnimalCategoryListReducer.swift */,
+			);
+			path = AnimalCategoryList;
+			sourceTree = "<group>";
+		};
+		FBFE80332C8E505100877C30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE80342C8E507E00877C30 /* AnimalApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FBFE80362C8E50BE00877C30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE80372C8E50C900877C30 /* AnimalCategory.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFE80112C8E230A00877C30 /* ContentView.swift in Sources */,
+				FBFE802F2C8E304400877C30 /* AnimalCategoryListReducer.swift in Sources */,
 				FBFE800F2C8E230A00877C30 /* PromovaTestApp.swift in Sources */,
+				FBFE80352C8E507E00877C30 /* AnimalApi.swift in Sources */,
+				FBFE802C2C8E302C00877C30 /* AnimalCategoryListView.swift in Sources */,
+				FBFE80382C8E50C900877C30 /* AnimalCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,9 +348,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NeYar.PromovaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,6 +374,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,9 +382,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NeYar.PromovaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
